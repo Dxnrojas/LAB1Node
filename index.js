@@ -41,7 +41,13 @@ studentsFilterGrade.forEach((student)=>{
 
 container.appendChild(studentsFilterGradeContainer);
 
+const averageTitleContainer = document.createElement('h1');
+averageTitleContainer.textContent = 'Average grades';
+container.appendChild(averageTitleContainer);
 
+const meanGrade = document.createElement('h4');
+meanGrade.textContent = `The average grade is: ${studentsAverageGrade}`;
+container.appendChild(meanGrade);
 
 
 Object.keys(studentsOrderCourse).forEach((course) => {
